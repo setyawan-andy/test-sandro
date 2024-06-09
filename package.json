@@ -11,7 +11,10 @@
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.3"
+    "next": "14.2.3",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
     "typescript": "^5",

@@ -1,9 +1,10 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
+/* eslint-disable @next/next/no-img-element */
+import Navbar from "@/components/Other/Navbar"
+import Blog from "@/components/Section/Blog"
+import { blog } from "@/constants/blog"
+import Head from "next/head"
+import Link from "next/link"
+import { Fragment } from "react"
 
 export default function Home() {
   return (
@@ -14,101 +15,64 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{" "}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+      <Fragment>
+        <div className="overflow-hidden">
+          <div className="position-relative">
+            <img src="/images/Bg.png" className="images__wrap-head" alt="" />
+            <div className="wrapper__bg-head"></div>
+            <Navbar />
+            <section className="position-relative z-2">
+              <div className="container">
+                <div className="text-center">
+                  <h1 className="semi-bold font__size--90 text__90-1024 text__90-md text__90-sm text__90-xs  color__white text-uppercase mb-0">
+                    We Provide high quality <br className="d-none d-sm-block" />{" "}
+                    Building Materials
+                  </h1>
+                  <p className="medium roboto font__size--16 text__16-1024 color__white my-4">
+                    Lorem ipsum dolor sit amet consectetur. Suspendisse ultrices
+                    tortor <br className="d-none d-sm-block" /> vel lectus.
+                    Tincidunt mauris eget volutpat nunc.
+                  </p>
+
+                  <div className="d-flex flex-wrap flex-sm-nowrap align-items-center justify-content-center">
+                    <button className="btn__mm-w-60 semi-bold rounded-0 font__size--14 text__14-1024 btn btn__orange shadow color__white text-uppercase">
+                      Discover More
+                    </button>
+                    <Link
+                      href="/service"
+                      className="btn__mm-w-60  semi-bold font__size--14 text__14-1024 btn btn__outlined--white color__white no__opacity h__black rounded-0 shadow text-uppercase mt-3 mt-sm-0 ml-sm-4"
+                    >
+                      our service
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
+
+          {/* <About />
+
+        <Service service={service} /> */}
+
+          <section className="overflow-hidden">
+            <div className="text-center mb-5">
+              <p className="semi-bold font__size--14 text__14-1024 color__orange text-uppercase">
+                our work
+              </p>
+              <h3 className="bold font__size--58 text__50-1024 text__50-sm text__50-xs text-uppercase">
+                Construction Projects
+              </h3>
+            </div>
+            {/* <SliderConstruction /> */}
+          </section>
+
+          <Blog blog={blog} title={"news & articles"} top={"latest blog"} />
+
+          {/* <Contact />
+
+        <Footer /> */}
         </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+      </Fragment>
     </>
-  );
+  )
 }
