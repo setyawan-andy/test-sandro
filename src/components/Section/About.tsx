@@ -1,8 +1,8 @@
-import Link from "next/link";
+/* eslint-disable @next/next/no-img-element */
 
 const About = () => {
   return (
-    <section>
+    <section id="about">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-5 mb-4 my-md-auto">
@@ -28,17 +28,17 @@ const About = () => {
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
             </p>
-            <Link
+            {/* <Link
               href="/contact"
               className="semi-bold rounded-0 font__size--14 text__14-1024 btn btn__orange shadow color__white text-uppercase"
             >
               Have A Project
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default About;
+export default About

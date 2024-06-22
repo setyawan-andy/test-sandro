@@ -1,112 +1,34 @@
-import React, { Fragment } from "react";
-import Link from "next/link";
-import Navbar from "../components/Other/Navbar";
-import Contact from "../components/Section/Contact";
-import Head from "../components/Section/Head";
-import Footer from "../components/Other/Footer";
+/* eslint-disable @next/next/no-img-element */
+import React, { Fragment } from "react"
+import Contact from "../components/Section/Contact"
+import Footer from "../components/Other/Footer"
+import Client from "@/components/Section/Client"
+import Team from "@/components/Section/Team"
 
 const DetailProject = () => {
   return (
     <Fragment>
-      <div className="overflow-hidden">
-        <div className="position-relative">
-          <img src="/images/Bg.png" className="images__wrap-head" alt="" />
-          <div className="wrapper__bg-head"></div>
-          <Navbar />
-          <Head
-            default="home"
-            current="detail project"
-            title={"detail project"}
-          />
-        </div>
-
+      <div className="overflow-hidden" id="client">
         <section>
           <div className="container">
-            <div className="mb-5">
+            <div className="mb-5 text-center">
               <p className="semi-bold font__size--14 text__14-1024 color__orange text-uppercase">
-                PROJECT NAME
+                Our Client
               </p>
               <h3 className="bold font__size--58 text__50-1024 text__50-sm text__50-xs text-uppercase">
-                home queen resort
+                Trusted Partners
               </h3>
             </div>
 
-            <img
-              src="/images/sdsdsad.png"
-              className="images__cover-head mb-4"
-              alt=""
-            />
-            <div className="row">
-              <div className="col-4">
-                <img
-                  src="/images/project-one-img-1.jpg.png"
-                  className="images__cover-detail"
-                  alt=""
-                />
-              </div>
-              <div className="col-4">
-                <img
-                  src="/images/project-one-img-3.jpg.png"
-                  className="images__cover-detail"
-                  alt=""
-                />
-              </div>
-              <div className="col-4">
-                <img
-                  src="/images/project-one-img-4.jpg.png"
-                  className="images__cover-detail"
-                  alt=""
-                />
-              </div>
-            </div>
+            {/* <Client /> */}
+            <Client />
           </div>
         </section>
 
+        <Team />
+
         <section className="pt-0">
           <div className="container">
-            <div className="wrapper__list-detail-project mb-5">
-              <div className="items">
-                <h5 className="roboto normal font__size--20 text__20-1024">
-                  Date
-                </h5>
-                <p className="roboto normal font__size--16 text__16-1024">
-                  June 29, 2021
-                </p>
-              </div>
-              <div className="items">
-                <h5 className="roboto normal font__size--20 text__20-1024">
-                  Categories
-                </h5>
-                <p className="roboto normal font__size--16 text__16-1024">
-                  Construction & Engineering
-                </p>
-              </div>
-              <div className="items">
-                <h5 className="roboto normal font__size--20 text__20-1024">
-                  Client
-                </h5>
-                <p className="roboto normal font__size--16 text__16-1024">
-                  PT. Queenku
-                </p>
-              </div>
-              <div className="items">
-                <h5 className="roboto normal font__size--20 text__20-1024">
-                  Location
-                </h5>
-                <p className="roboto normal font__size--16 text__16-1024">
-                  Pontianak
-                </p>
-              </div>
-              <div className="items">
-                <h5 className="roboto normal font__size--20 text__20-1024">
-                  Completed
-                </h5>
-                <p className="roboto normal font__size--16 text__16-1024">
-                  Nov 2022
-                </p>
-              </div>
-            </div>
-
             <div className="row">
               <div className="col-md-7 mb-4 mb-md-0">
                 <h3 className="bold font__size--32 text__32-1024 text-uppercase mb-3">
@@ -158,36 +80,18 @@ const DetailProject = () => {
                   download brochure
                 </h3>
 
-                <Link href="#!" legacyBehavior>
-                  <a className="wrapper__list-document d-inline-block color__gray-1">
-                    <div className="d-flex align-items-center">
-                      <img src="/images/pdf (1) 1.png" alt="" />
-                      <div className="ml-2 semi-bold font__size--14 text__14-1024 text-uppercase">
-                        download COMPANY PROFILE
-                      </div>
+                <a
+                  href="/assets/testpdf.pdf"
+                  download
+                  className="wrapper__list-document d-inline-block color__gray-1"
+                >
+                  <div className="d-flex align-items-center">
+                    <img src="/images/pdf (1) 1.png" alt="" />
+                    <div className="ml-2 semi-bold font__size--14 text__14-1024 text-uppercase">
+                      download COMPANY PROFILE
                     </div>
-                  </a>
-                </Link>
-                <Link href="#!" legacyBehavior>
-                  <a className="wrapper__list-document d-inline-block color__gray-1 my-3">
-                    <div className="d-flex align-items-center">
-                      <img src="/images/pdf (1) 1.png" alt="" />
-                      <div className="ml-2 semi-bold font__size--14 text__14-1024 text-uppercase">
-                        product info
-                      </div>
-                    </div>
-                  </a>
-                </Link>
-                <Link href="#!" legacyBehavior>
-                  <a className="wrapper__list-document d-inline-block color__gray-1">
-                    <div className="d-flex align-items-center">
-                      <img src="/images/pdf (1) 1.png" alt="" />
-                      <div className="ml-2 semi-bold font__size--14 text__14-1024 text-uppercase">
-                        pricing table
-                      </div>
-                    </div>
-                  </a>
-                </Link>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -198,7 +102,7 @@ const DetailProject = () => {
         <Footer type={""} />
       </div>
     </Fragment>
-  );
-};
+  )
+}
 
-export default DetailProject;
+export default DetailProject

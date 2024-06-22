@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link"
-import React, { Component, Fragment } from "react"
-import { useEffect } from "react"
+import React, { Fragment } from "react"
 import { useState } from "react"
+import { Link as LinkScroll } from "react-scroll"
 
 type Props = {
   //
@@ -40,12 +40,33 @@ const Navbar = (props: Props) => {
               />
             </div>
             <div className="menu">
-              <Link
-                href="/"
+              <LinkScroll
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                to="home"
                 className="medium font__size--14 text__14-1024 color__white"
               >
                 Home
-              </Link>
+              </LinkScroll>
+              <hr />
+              <LinkScroll
+                spy={true}
+                smooth={true}
+                to="about"
+                className="medium font__size--14 text__14-1024 color__white"
+              >
+                About
+              </LinkScroll>
+              <hr />
+              <LinkScroll
+                spy={true}
+                smooth={true}
+                to="service"
+                className="medium font__size--14 text__14-1024 color__white"
+              >
+                Service
+              </LinkScroll>
               <hr />
               <div className="position-relative">
                 <div
@@ -56,7 +77,7 @@ const Navbar = (props: Props) => {
                   aria-expanded="false"
                 >
                   <div className="d-flex align-items-center">
-                    pages
+                    Articles
                     <svg
                       className="ml-2 arrow"
                       width="16"
@@ -78,50 +99,46 @@ const Navbar = (props: Props) => {
                   className="dropdown-menu wrapper__dropdown-menu-all medium font__size--14 text__14-1024"
                   aria-labelledby="dropdownMenuButton"
                 >
-                  <Link href="/about" className="dropdown-item">
-                    About
-                  </Link>
-                  <Link href="/contact" className="dropdown-item">
-                    Contact
-                  </Link>
-                  <Link href="/news/detail" className="dropdown-item">
-                    Detail News
-                  </Link>
-                  <Link href="/service/detail" className="dropdown-item">
-                    Detail Service
-                  </Link>
-                  <Link href="/project/detail" className="dropdown-item">
-                    Detail Project
-                  </Link>
-                  <Link href="/terms" className="dropdown-item">
-                    Terms
-                  </Link>
-                  <Link href="/privacy" className="dropdown-item">
-                    Privacy
-                  </Link>
+                  <LinkScroll
+                    to="overview"
+                    className="dropdown-item"
+                    spy={true}
+                    smooth={true}
+                  >
+                    Overview
+                  </LinkScroll>
+                  {/* <Link href="/article" className="dropdown-item">
+                    Detail Article
+                  </Link> */}
                 </div>
               </div>
               <hr />
-              <Link
-                href="/videos"
+              <LinkScroll
+                spy={true}
+                smooth={true}
+                to="client"
                 className="medium font__size--14 text__14-1024 color__white"
               >
-                Service
-              </Link>
+                Our Client
+              </LinkScroll>
               <hr />
-              <Link
-                href="/contact"
+              <LinkScroll
+                spy={true}
+                smooth={true}
+                to="team"
                 className="medium font__size--14 text__14-1024 color__white"
               >
-                Project
-              </Link>
+                Our Team
+              </LinkScroll>
               <hr />
-              <Link
-                href="/faq"
+              <LinkScroll
+                spy={true}
+                smooth={true}
+                to="contact"
                 className="medium font__size--14 text__14-1024 color__white"
               >
-                News
-              </Link>
+                Contact Us
+              </LinkScroll>
             </div>
           </div>
         </div>
@@ -154,12 +171,35 @@ const Navbar = (props: Props) => {
           >
             <ul className="navbar-nav menu__center">
               <li className="nav-item">
-                <Link
-                  href="/"
+                <LinkScroll
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  to="home"
                   className="nav-link semi-bold font__size--14 text__14-1024 color__white opacity__7 text-uppercase hover"
                 >
                   Home
-                </Link>
+                </LinkScroll>
+              </li>
+              <li className="nav-item">
+                <LinkScroll
+                  spy={true}
+                  smooth={true}
+                  to="about"
+                  className="nav-link semi-bold font__size--14 text__14-1024 color__white opacity__7 text-uppercase hover"
+                >
+                  About
+                </LinkScroll>
+              </li>
+              <li className="nav-item">
+                <LinkScroll
+                  spy={true}
+                  smooth={true}
+                  to="service"
+                  className="nav-link semi-bold font__size--14 text__14-1024 color__white opacity__7 text-uppercase hover"
+                >
+                  Service
+                </LinkScroll>
               </li>
               <li className="nav-item position-relative">
                 <div
@@ -170,7 +210,7 @@ const Navbar = (props: Props) => {
                   aria-expanded="false"
                 >
                   <div className="d-flex align-items-center">
-                    pages
+                    Articles
                     <svg
                       className="ml-2 arrow"
                       width="16"
@@ -192,52 +232,38 @@ const Navbar = (props: Props) => {
                   className="dropdown-menu wrapper__dropdown-menu-all"
                   aria-labelledby="dropdownMenuButton"
                 >
-                  <Link href="/about" className="dropdown-item">
-                    About
-                  </Link>
-                  <Link href="/contact" className="dropdown-item">
-                    Contact
-                  </Link>
-                  <Link href="/news/detail" className="dropdown-item">
-                    Detail News
-                  </Link>
-                  <Link href="/service/detail" className="dropdown-item">
-                    Detail Service
-                  </Link>
-                  <Link href="/project/detail" className="dropdown-item">
-                    Detail Project
-                  </Link>
-                  <Link href="/terms" className="dropdown-item">
-                    Terms
-                  </Link>
-                  <Link href="/privacy" className="dropdown-item">
-                    Privacy
-                  </Link>
+                  <LinkScroll
+                    to="overview"
+                    className="dropdown-item"
+                    spy={true}
+                    smooth={true}
+                  >
+                    Overview
+                  </LinkScroll>
+                  {/* <Link href="/article" className="dropdown-item">
+                    Detail Article
+                  </Link> */}
                 </div>
               </li>
               <li className="nav-item">
-                <Link
-                  href="/service"
+                <LinkScroll
+                  spy={true}
+                  smooth={true}
+                  to="client"
                   className="nav-link semi-bold font__size--14 text__14-1024 color__white opacity__7 text-uppercase hover"
                 >
-                  service
-                </Link>
+                  Our Client
+                </LinkScroll>
               </li>
               <li className="nav-item">
-                <Link
-                  href="/project"
+                <LinkScroll
+                  spy={true}
+                  smooth={true}
+                  to="team"
                   className="nav-link semi-bold font__size--14 text__14-1024 color__white opacity__7 text-uppercase hover"
                 >
-                  project
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  href="/news"
-                  className="nav-link semi-bold font__size--14 text__14-1024 color__white opacity__7 text-uppercase hover"
-                >
-                  News
-                </Link>
+                  Our Team
+                </LinkScroll>
               </li>
             </ul>
           </div>
@@ -250,16 +276,18 @@ const Navbar = (props: Props) => {
             <span></span>
             <span></span>
           </div>
-          <a
-            href="#!"
+          <LinkScroll
+            to="contact"
+            spy={true}
+            smooth={true}
             className="d-none d-lg-block semi-bold font__size--14 btn btn__outlined--white color__white no__opacity h__black rounded-0 shadow ml-auto text-uppercase"
           >
-            get a quote
-          </a>
+            Contact Us
+          </LinkScroll>
         </div>
       </nav>
     </Fragment>
-  );
+  )
 }
 
 export default Navbar

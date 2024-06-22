@@ -10,7 +10,7 @@ type Props = {
 const Cardblog = ({ data }: Props) => {
   return (
     <Link
-      href="/news/detail"
+      href={`/article/${data.id}`}
       className="wrapper__card-blog color__black d-inline-block w-100"
     >
       <img src={data.img} className="img" alt="" />
