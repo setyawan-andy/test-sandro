@@ -12,7 +12,7 @@ type Props = {
 
 const Blog = ({ blog, title, top, type }: Props) => {
   return (
-    <section>
+    <section id="overview">
       <div className="container">
         <div className="text-center mb-5">
           <p className="semi-bold font__size--14 text__14-1024 color__orange text-uppercase">

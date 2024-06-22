@@ -1,10 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 import Navbar from "@/components/Other/Navbar"
+import About from "@/components/Section/About"
 import Blog from "@/components/Section/Blog"
+import Service from "@/components/Section/Service"
+import DetailProject from "@/constants/DetailProject"
 import { blog } from "@/constants/blog"
+import { serviceData } from "@/constants/home"
 import Head from "next/head"
-import Link from "next/link"
 import { Fragment } from "react"
+
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import SliderCarousel from "@/components/slider"
+import BackToTopButton from "@/components/back-to-top-button"
 
 export default function Home() {
   return (
@@ -16,63 +24,35 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Fragment>
-        <div className="overflow-hidden">
+        <div className="overflow-hidden" id="home">
           <div className="position-relative">
-            <img src="/images/Bg.png" className="images__wrap-head" alt="" />
+            <SliderCarousel />
             <div className="wrapper__bg-head"></div>
             <Navbar />
             <section className="position-relative z-2">
               <div className="container">
                 <div className="text-center">
                   <h1 className="semi-bold font__size--90 text__90-1024 text__90-md text__90-sm text__90-xs  color__white text-uppercase mb-0">
-                    We Provide high quality <br className="d-none d-sm-block" />{" "}
-                    Building Materials
+                    Welcome to <br className="d-none d-sm-block " /> Mandiri
+                    Trans Utama
                   </h1>
                   <p className="medium roboto font__size--16 text__16-1024 color__white my-4">
-                    Lorem ipsum dolor sit amet consectetur. Suspendisse ultrices
-                    tortor <br className="d-none d-sm-block" /> vel lectus.
-                    Tincidunt mauris eget volutpat nunc.
+                    Jl. Jend. Sudirman Raya Bekasi Km. 32 Harapan Mulya, Medan
+                    Satria tortor <br className="d-none d-sm-block" /> Kota
+                    Bekasi, West Java, 17143 Indonesia
                   </p>
-
-                  <div className="d-flex flex-wrap flex-sm-nowrap align-items-center justify-content-center">
-                    <button className="btn__mm-w-60 semi-bold rounded-0 font__size--14 text__14-1024 btn btn__orange shadow color__white text-uppercase">
-                      Discover More
-                    </button>
-                    <Link
-                      href="/service"
-                      className="btn__mm-w-60  semi-bold font__size--14 text__14-1024 btn btn__outlined--white color__white no__opacity h__black rounded-0 shadow text-uppercase mt-3 mt-sm-0 ml-sm-4"
-                    >
-                      our service
-                    </Link>
-                  </div>
+                  <div className="div flex-wrap flex-sm-nowrap align-items-center justify-content-center"></div>
                 </div>
               </div>
             </section>
           </div>
-
-          {/* <About />
-
-        <Service service={service} /> */}
-
-          <section className="overflow-hidden">
-            <div className="text-center mb-5">
-              <p className="semi-bold font__size--14 text__14-1024 color__orange text-uppercase">
-                our work
-              </p>
-              <h3 className="bold font__size--58 text__50-1024 text__50-sm text__50-xs text-uppercase">
-                Construction Projects
-              </h3>
-            </div>
-            {/* <SliderConstruction /> */}
-          </section>
-
+          <About />
+          <Service service={serviceData} type="home" />
           <Blog blog={blog} title={"news & articles"} top={"latest blog"} />
-
-          {/* <Contact />
-
-        <Footer /> */}
+          <DetailProject />
         </div>
       </Fragment>
+      <BackToTopButton />
     </>
   )
 }
