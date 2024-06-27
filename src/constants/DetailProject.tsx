@@ -13,7 +13,7 @@ const DetailProject = () => {
           <div className="container">
             <div className="mb-5 text-center">
               <p className="semi-bold font__size--14 text__14-1024 color__orange text-uppercase">
-                Our Client
+                Our Customer
               </p>
               <h3 className="bold font__size--58 text__50-1024 text__50-sm text__50-xs text-uppercase">
                 Trusted Partners
@@ -81,7 +81,7 @@ const DetailProject = () => {
                 </h3>
 
                 <a
-                  href="/assets/testpdf.pdf"
+                  href="/assets/Company_Profile.pdf"
                   download
                   className="wrapper__list-document d-inline-block color__gray-1"
                 >

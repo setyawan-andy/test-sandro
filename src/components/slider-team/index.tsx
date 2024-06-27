@@ -34,7 +34,7 @@ const SliderConstruction = () => {
       className="wrapper__slider-construction"
     >
       <div className="hover-img">
-        <img src="/images/rn (1).png" className="images__construction" alt="" />
+        <img src="/images/team3.jpg" className="images__construction" alt="" />
         <figcaption>
           <h6>
             Lakstoro <br />
@@ -44,7 +44,7 @@ const SliderConstruction = () => {
         </figcaption>
       </div>
       <div className="hover-img">
-        <img src="/images/rn (3).png" className="images__construction" alt="" />
+        <img src="/images/team6.jpg" className="images__construction" alt="" />
         <figcaption>
           <h6>
             Lakstoro <br />
@@ -54,7 +54,7 @@ const SliderConstruction = () => {
         </figcaption>
       </div>
       <div className="hover-img">
-        <img src="/images/rn (2).png" className="images__construction" alt="" />
+        <img src="/images/team 2.jpg" className="images__construction" alt="" />
         <figcaption>
           <h6>
             Lakstoro <br />
@@ -64,7 +64,7 @@ const SliderConstruction = () => {
         </figcaption>
       </div>
       <div className="hover-img">
-        <img src="/images/rn (1).png" className="images__construction" alt="" />
+        <img src="/images/team1.jpg" className="images__construction" alt="" />
         <figcaption>
           <h6>
             Lakstoro <br />
@@ -74,7 +74,7 @@ const SliderConstruction = () => {
         </figcaption>
       </div>
       <div className="hover-img">
-        <img src="/images/rn (3).png" className="images__construction" alt="" />
+        <img src="/images/team4.jpg" className="images__construction" alt="" />
         <figcaption>
           <h6>
             Lakstoro <br />
@@ -84,7 +84,7 @@ const SliderConstruction = () => {
         </figcaption>
       </div>
       <div className="hover-img">
-        <img src="/images/rn (2).png" className="images__construction" alt="" />
+        <img src="/images/team5.jpg" className="images__construction" alt="" />
         <figcaption>
           <h6>
             Lakstoro <br />

@@ -48,7 +48,7 @@ export default function Home() {
           </div>
           <About />
           <Service service={serviceData} type="home" />
-          <Blog blog={blog} title={"news & articles"} top={"latest blog"} />
+          <Blog blog={blog} title={"articles"} top={"latest blog"} />
           <DetailProject />
         </div>
       </Fragment>

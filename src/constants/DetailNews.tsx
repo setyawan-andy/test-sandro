@@ -141,7 +141,7 @@ const DetailNews = ({ blog }: { blog: any }) => {
           </div>
         </section>
 
-        <Blog blog={blog} title={"news & articles"} top={"latest blog"} />
+        <Blog blog={blog} title={"articles"} top={"latest blog"} />
 
         <Contact />
 

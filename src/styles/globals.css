@@ -4767,4 +4767,8 @@ h5 {
 .hover-img:hover figcaption {
   opacity: 1;
 }
+.pointer-cursor {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=main.css.map */

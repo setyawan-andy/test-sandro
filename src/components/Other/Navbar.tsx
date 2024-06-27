@@ -119,7 +119,7 @@ const Navbar = (props: Props) => {
                 to="client"
                 className="medium font__size--14 text__14-1024 color__white"
               >
-                Our Client
+                Our Customer
               </LinkScroll>
               <hr />
               <LinkScroll
@@ -252,7 +252,7 @@ const Navbar = (props: Props) => {
                   to="client"
                   className="nav-link semi-bold font__size--14 text__14-1024 color__white opacity__7 text-uppercase hover"
                 >
-                  Our Client
+                  Our Customer
                 </LinkScroll>
               </li>
               <li className="nav-item">

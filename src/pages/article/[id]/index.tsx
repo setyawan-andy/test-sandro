@@ -1,16 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
-import { useRouter } from "next/router"
-import React from "react"
-import { articles } from "@/constants/articles"
+import { useRouter } from "next/router";
+import React from "react";
+import { articles } from "@/constants/articles";
 
-type Props = {}
+type Props = {};
 
 const ArticleDetail = (props: Props) => {
-  const router = useRouter()
+  const router = useRouter();
 
-  const { id } = router.query
+  const { id } = router.query;
 
-  const article = articles.find((article) => article.id === Number(id))
+  const article = articles.find((article) => article.id === Number(id));
 
   return (
     <section>
@@ -82,7 +82,8 @@ const ArticleDetail = (props: Props) => {
 
               {article?.p5}
 
-              <img src={article?.subImage} className="w-100 mb-3" alt="" />
+              <img src={article?.subImage} className="w-50 mb-2" alt="" />
+              <img src={article?.subImage2} className="w-50 mb-2" alt="" />
 
               <p className="normal roboto font__size--16 text__16-1024 color__gray-1 lh-2 mb-3">
                 {article?.p6}
@@ -95,7 +96,7 @@ const ArticleDetail = (props: Props) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ArticleDetail
+export default ArticleDetail;

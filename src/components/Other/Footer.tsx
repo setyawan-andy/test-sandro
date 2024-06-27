@@ -1,26 +1,25 @@
-import React, { useEffect, useRef } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import useWindowDimensions from "@/utils/device"
+import React, { useEffect, useRef } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import useWindowDimensions from "@/utils/device";
+import { Link as LinkScroll } from "react-scroll";
 
 type FooterProps = {
-  type: string
-}
+  type: string;
+};
 
 const Footer = (props: FooterProps) => {
-  const emailRef = useRef(null)
-
-  const { width } = useWindowDimensions()
-
-  const isMobile = width && width <= 768
+  const emailRef = useRef(null);
+  const { width } = useWindowDimensions();
+  const isMobile = width && width <= 768;
 
   useEffect(() => {
     if (isMobile) {
-      ;(emailRef as any)?.current?.classList?.add("truncate")
+      (emailRef as any)?.current?.classList?.add("truncate");
     } else {
-      ;(emailRef as any)?.current?.classList?.remove("truncate")
+      (emailRef as any)?.current?.classList?.remove("truncate");
     }
-  }, [isMobile])
+  }, [isMobile]);
 
   return (
     <section className={"pb-4 " + (props.type !== "contact" ? "mt__10" : "")}>
@@ -38,49 +37,62 @@ const Footer = (props: FooterProps) => {
               className="text-left normal roboto font__size--16 text__16-1024 color__gray-1"
               style={{ marginTop: "68px" }}
             >
-              Built with ♥ by Laksandro Ramadhanu @2024
+              Built by Laksandro Ramadhanu @2024
             </div>
           </div>
           <div className="col-6 col-md-2 mb-4 mb-md-0">
-            <h5 className="semi-bold font__size--14 text__14-1024 text-uppercase mb-3">
-              links
-            </h5>
             <ul className="wrapper__list-footer">
               <li>
-                <Link href="/" legacyBehavior>
-                  <a className="semi-bold font__size--14 text__14-1024 color__black text-uppercase opacity__7 hover">
-                    home
-                  </a>
-                </Link>
+                <LinkScroll
+                  spy={true}
+                  smooth={true}
+                  to="about"
+                  className="semi-bold font__size--14 text__14-1024 color__black text-uppercase opacity__7 hover pointer-cursor"
+                >
+                  About
+                </LinkScroll>
               </li>
               <li>
-                <Link href="/service" legacyBehavior>
-                  <a className="semi-bold font__size--14 text__14-1024 color__black text-uppercase opacity__7 hover">
-                    service
-                  </a>
-                </Link>
+                <LinkScroll
+                  spy={true}
+                  smooth={true}
+                  to="service"
+                  className="semi-bold font__size--14 text__14-1024 color__black text-uppercase opacity__7 hover pointer-cursor"
+                >
+                  Service
+                </LinkScroll>
               </li>
               <li>
-                <Link href="/project" legacyBehavior>
-                  <a className="semi-bold font__size--14 text__14-1024 color__black text-uppercase opacity__7 hover">
-                    project
-                  </a>
-                </Link>
+                <LinkScroll
+                  spy={true}
+                  smooth={true}
+                  to="overview"
+                  className="semi-bold font__size--14 text__14-1024 color__black text-uppercase opacity__7 hover pointer-cursor"
+                >
+                  Articles
+                </LinkScroll>
               </li>
               <li>
-                <Link href="/news" legacyBehavior>
-                  <a className="semi-bold font__size--14 text__14-1024 color__black text-uppercase opacity__7 hover">
-                    news
-                  </a>
-                </Link>
+                <LinkScroll
+                  spy={true}
+                  smooth={true}
+                  to="client"
+                  className="semi-bold font__size--14 text__14-1024 color__black text-uppercase opacity__7 hover pointer-cursor"
+                >
+                  Our Customer
+                </LinkScroll>
               </li>
               <li>
-                <Link href="/contact" legacyBehavior>
-                  <a className="semi-bold font__size--14 text__14-1024 color__black text-uppercase opacity__7 hover">
-                    contact
-                  </a>
-                </Link>
+                <LinkScroll
+                  spy={true}
+                  smooth={true}
+                  to="team"
+                  className="semi-bold font__size--14 text__14-1024 color__black text-uppercase opacity__7 hover pointer-cursor"
+                >
+                  Our Team
+                </LinkScroll>
               </li>
+              <li></li>
             </ul>
           </div>
           <div className="col-6 col-md-4 mb-4 mb-md-0">
@@ -89,7 +101,7 @@ const Footer = (props: FooterProps) => {
             </h5>
             <div className="d-flex align-items-center">
               <a
-                href="https://www.facebook.com/profile.php?id=100010294722436&mibextid=LQQJ4d"
+                href="https://www.facebook.com/profile.php?id=100062579820279&mibextid=LQQJ4d"
                 target="_blank"
               >
                 <svg
@@ -171,7 +183,7 @@ const Footer = (props: FooterProps) => {
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
                       height="16"
-                      fill="currentColor"
+                      fill="#00266d"
                       className="bi bi-copy"
                       viewBox="0 0 16 16"
                     >
@@ -203,7 +215,7 @@ const Footer = (props: FooterProps) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

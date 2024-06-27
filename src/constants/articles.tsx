@@ -1,19 +1,19 @@
 type ArticleType = {
-  id: number
-  title: JSX.Element
-  mainImage: string
-  mainImage2?: string
-  p1: string
-  p2: string
-  p3: string
-  p4: string
-  p5: JSX.Element
-  subImage: string
-  subImage2?: string
-  subImage3?: string
-  p6: string
-  p7: string
-}
+  id: number;
+  title: JSX.Element;
+  mainImage: string;
+  mainImage2?: string;
+  p1: string;
+  p2: string;
+  p3: string;
+  p4: string;
+  p5: JSX.Element;
+  subImage: string;
+  subImage2?: string;
+  subImage3?: string;
+  p6: string;
+  p7: string;
+};
 
 export const articles: ArticleType[] = [
   {
@@ -21,12 +21,12 @@ export const articles: ArticleType[] = [
     title: (
       <div className="text-center mb-5">
         <h3 className="bold font__size--32 text__32-1024 text-uppercase mb-3">
-          Cargo flow through better supply chain{" "}
-          <br className="d-none d-sm-block" /> visibility, control.
+          QUALITY, HEALTH & SAFETY MANAGEMENT{" "}
+          <br className="d-none d-sm-block" />
         </h3>
         <div className="d-flex align-items-center justify-content-center">
           <h5 className="mb-0 semi-bold font__size--14 text__14-1024 text-uppercase color__orange">
-            oil & gas
+            Trucking And Heavy Equipment Rental.
           </h5>
           <span className="font__size--14 text__14-1024 text-uppercase color__gray-1 px-2">
             |
@@ -37,8 +37,7 @@ export const articles: ArticleType[] = [
         </div>
       </div>
     ),
-    mainImage: "/images/as (1).png",
-    mainImage2: "/images/as (2).png",
+    mainImage: "/images/articles5.jpg",
     p1: `Lorem ipsum dolor sit amet consectetur. Facilisis natoque
     aliquam arcu eget risus luctus sed consectetur. Rhoncus cursus
     ac pretium nibh ipsum leo nibh. Eu fames morbi id magna egestas
@@ -72,17 +71,10 @@ export const articles: ArticleType[] = [
         <li>Aenean dictumst risus posuere a at id fermentum nibh.</li>
       </ul>
     ),
-    subImage: `/images/as (2).png`,
-    p6: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id
-        pellentesque ut pellentesque varius amet mauris. Tempor, risus,
-        congue gravida nulla tincidunt nec diam. Tincidunt magnis eu,
-        vitae dictumst commodo dolor in. Aenean dictumst risus posuere a
-        at id fermentum nibh. Luctus nunc bibendum duis egestas
-        scelerisque.`,
-    p7: `Maecenas in pharetra hendrerit neque, tellus eu. Arcu tempus,
-        vel blandit adipiscing a sed cursus. Augue vestibulum tempus
-        lectus gravida condimentum mauris iaculis. Sodales imperdiet id
-        maecenas molestie id.`,
+    subImage: `/images/iso1.jpg`,
+    subImage2: `/images/iso2.jpg`,
+    p6: `As a form of our commitment to compliance.`,
+    p7: ` PT. Mandiri Trans Utama applies Integrated of Quality, Healts and Safety Management System which is certified ISO 9001 : 2015 and ISO 45001 : 2018.`,
   },
   {
     id: 2,
@@ -218,4 +210,4 @@ export const articles: ArticleType[] = [
         lectus gravida condimentum mauris iaculis. Sodales imperdiet id
         maecenas molestie id.`,
   },
-]
+];

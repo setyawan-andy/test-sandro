@@ -19,6 +19,7 @@ const Client = (props: Props) => {
     "/images/client-9.png",
     "/images/client-10.png",
     "/images/client-11.png",
+    "/images/baker (2).png"
   ]
 
   return (
