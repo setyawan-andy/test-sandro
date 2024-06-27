@@ -10,7 +10,7 @@ export const serviceData = [
     desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
   },
   {
-    img: "./../images/articles26.jpg",
+    img: "./../images/articles26.JPG",
     title: "Auto & Mechanical Engineering",
     desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
   },
@@ -20,12 +20,12 @@ export const serviceData = [
     desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
   },
   {
-    img: "./../images/service4.jpg",
+    img: "./../images/service4.JPG",
     title: "Construction & Engineering",
     desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
   },
   {
-    img: "./../images/service5.jpg",
+    img: "./../images/service5.JPG",
     title: "Auto & Mechanical Engineering",
     desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
   },

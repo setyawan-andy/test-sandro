@@ -1,11 +1,11 @@
 export type Blog = {
-  id: number;
-  img: string;
-  tag: string;
-  date: string;
-  title: string;
-  desc: string;
-};
+  id: number
+  img: string
+  tag: string
+  date: string
+  title: string
+  desc: string
+}
 
 export const blog: Blog[] = [
   {
@@ -26,10 +26,10 @@ export const blog: Blog[] = [
   },
   {
     id: 3,
-    img: "/images/articles22.jpg",
+    img: "/images/articles22.JPG",
     tag: "oil & gas",
     date: "29 Nov 2022",
     title: "Cargo flow through better supply chain visibility, control.",
     desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
   },
-];
+]
