@@ -6,7 +6,6 @@ import React from "react"
 type Props = {
   data: Blog
 }
-
 const Cardblog = ({ data }: Props) => {
   return (
     <Link
@@ -41,5 +40,6 @@ const Cardblog = ({ data }: Props) => {
     </Link>
   )
 }
+
 
 export default Cardblog

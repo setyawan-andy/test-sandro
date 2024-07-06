@@ -15,7 +15,7 @@ const BackToTopButton = (props: Props) => {
         setShowButton(false)
       }
     }
-
+    
     window.addEventListener("scroll", checkScrollHeight)
     return () => {
       window.removeEventListener("scroll", checkScrollHeight)

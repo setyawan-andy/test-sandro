@@ -1,27 +1,27 @@
-import React, { useState } from "react"
-import Image from "next/image"
+import React, { useState } from "react";
+import Image from "next/image";
 
 const Contact = () => {
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [phoneNumber, setPhoneNumber] = useState("")
-  const [message, setMessage] = useState("")
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
+    event.preventDefault();
 
-    const waNumber = "6289525430685"
-    const waMessage = `Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nMessage: ${message}`
+    const waNumber = "6289525430685";
+    const waMessage = `Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nMessage: ${message}`;
 
     const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(
       waMessage
-    )}`
-    window.open(waLink)
-    setName("")
-    setEmail("")
-    setPhoneNumber("")
-    setMessage("")
-  }
+    )}`;
+    window.open(waLink);
+    setName("");
+    setEmail("");
+    setPhoneNumber("");
+    setMessage("");
+  };
 
   return (
     <section className="position-relative" id="contact">
@@ -40,12 +40,10 @@ const Contact = () => {
               contact us
             </p>
             <h3 className="bold font__size--58 text__50-1024 text__50-sm text__50-xs color__white text-uppercase mb-4">
-              contact us to get more info
+              {`Get More Information`}
             </h3>
             <p className="roboto normal font__size--16 text__16-1024 color__white">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+          {`At Mandiri Trans Utama, we are here to assist you with all the information you need. Whether it's our transportation services, business partnerships, or any other inquiries, our team is always ready to provide prompt and accurate responses. Contact Us`}
             </p>
           </div>
           <form
@@ -102,12 +100,12 @@ const Contact = () => {
                   className="form-control wrapper__field textarea"
                   cols={30}
                   rows={5}
-                  placeholder="Type here..."
+                  placeholder={`Type here...`}
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
               </div>
-              <button
+              <button   
                 type="submit"
                 className="semi-bold rounded-0 font__size--14 text__14-1024 btn btn__orange shadow color__white text-uppercase"
               >
@@ -118,7 +116,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

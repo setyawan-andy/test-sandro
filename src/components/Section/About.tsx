@@ -19,17 +19,16 @@ const About = () => {
               19+ Years of working experience with global industries
             </p>
             <p className="roboto normal font__size--16 text__16-1024 color__gray-1">
-              Economic development during early 90’s had given a golden
-              opportunity for both international and national corporation to
-              expand their business in Indonesia. Mandiri Group them self aware
-              of the moment and decided to established a company PT. Mandiri
-              Traktor Utama (MTU) in May 18, 1995 in order to provide the market
-              with truck rental and trucking services.
+              PT Mandiri Trans Utama (MTU) is a transportation and logistics
+              company based in Indonesia. Established in 2005, the company
+              offers a range of services including truck rentals, trucking
+              services, and logistics solutions. They have expanded their
+              operations to serve the oil and coal mining sectors.
             </p>
             <p className="roboto normal font__size--16 text__16-1024 color__gray-1">
-              And in October 15, 2005 Mandiri Traktor Utama transformed into
-              Mandiri Trans Utama and expand the services to oil company and
-              coal mining operation
+              MTU is committed to quality and safety, adhering to ISO 9001:2000
+              and OHSAS 18001:1999 standards, ensuring high service quality and
+              safety management​ (PT Mandiri Trans Utama)​.
             </p>
             {/* <Link
               href="/contact"

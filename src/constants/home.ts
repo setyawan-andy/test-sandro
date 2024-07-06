@@ -1,35 +1,20 @@
 export const serviceData = [
   {
     img: "./../images/project/tesproject.JPG",
-    title: "Petroleum & Gas Energy",
-    desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+    title: "Mechanical Engineering",
+    desc: "Mechanical Engineers at Mandiri Trans Utama ensure our fleet remains in top condition. We provide dependable maintenance and repair services to keep our vehicles safe, efficient, and reliable.",
   },
   {
     img: "./../images/service1.jpg",
-    title: "Construction & Engineering",
-    desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
-  },
-  {
-    img: "./../images/articles26.JPG",
-    title: "Auto & Mechanical Engineering",
-    desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
-  },
-  {
-    img: "./../images/articles12.jpeg",
-    title: "Petroleum & Gas Energy",
-    desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
-  },
-  {
-    img: "./../images/service4.JPG",
-    title: "Construction & Engineering",
-    desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+    title: "HSE & Safety Engineering",
+    desc: "HSE & Safety Engineering at Mandiri Trans Utama designs and implements occupational health and safety policies and programs to ensure a safe work environment through risk identification, safety training, and compliance audits.",
   },
   {
     img: "./../images/service5.JPG",
-    title: "Auto & Mechanical Engineering",
-    desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+    title: "Driver & Assistant",
+    desc: "Drivers and Assistants at Mandiri Trans Utama ensure safe and efficient vehicle operations, adhere to traffic regulations and company protocols, and support logistical tasks to maintain operational efficiency and customer satisfaction.",
   },
-]
+];
 
 export const carouselImages = [
   {
@@ -44,4 +29,4 @@ export const carouselImages = [
     id: 3,
     src: "/images/carousel-3.jpeg",
   },
-]
+];

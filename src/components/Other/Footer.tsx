@@ -30,14 +30,14 @@ const Footer = (props: FooterProps) => {
               MANDIRI<span className="color__orange">TRANSUTAMA</span>
             </h3>
             <p className="normal font__size--16 text__16-1024 roboto color__gray-1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet
-              vitae vel id id porttitor ut in. Integer pretium
+              Committed to Excellence in Transportation Solutions
             </p>
             <div
               className="text-left normal roboto font__size--16 text__16-1024 color__gray-1"
               style={{ marginTop: "68px" }}
             >
-              Built by Laksandro Ramadhanu @2024
+              Developed by Mandiri Trans Utama © 2024 Mandiri Trans Utama. All
+              rights reserved.
             </div>
           </div>
           <div className="col-6 col-md-2 mb-4 mb-md-0">
